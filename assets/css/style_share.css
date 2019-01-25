@@ -1,0 +1,573 @@
+/*Configuração de font*/
+@font-face {
+  font-family: 'Krub-Regular';
+  src: url('../node_modules/bootstrap/dist/fonts/krub/Krub-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Krub-Regular';
+  src: url('../node_modules/bootstrap/dist/fonts/krub/Krub-Bold.ttf');
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+  color: #000;
+  font-family: "Krub-Regular";
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+* {
+  font-family: Krub-Regular;
+  font-weight: normal;
+}
+
+.fh5co-nav {
+	transition: .5s;
+	top: 0px;
+  margin: 0;
+  padding: 5px 0px 10px 0px;
+}
+
+.nav-scroll {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  padding: 5px 0px 10px 0px;
+  z-index: 1001;
+  background-color: white;
+  box-shadow: 5px 0px 20px black;
+}
+
+.fh5co-nav-toggle {
+	position: fixed;
+	float: right;
+}
+
+.text-dark-nav {
+  transition: .5s;
+  color: black !important;
+}
+
+.text-dark-nav:hover {
+  transition: .5s;
+  text-decoration: underline;
+  font-size: 16pt;
+}
+
+#fh5co-services,
+#fh5co-started,
+#fh5co-testimonial,
+#fh5co-project,
+#fh5co-about,
+#fh5co-contact,
+#fh5co-footer {
+  padding: 2em 0 0 0;
+  clear: both;
+}
+
+#fh5co-blog {
+  padding: 2em 0 2em 0;
+}
+
+/*Imagem de perfil*/
+.container-img {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 225px;
+  height: 225px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-img:hover .image {
+  filter: brightness(0.3);
+}
+
+.container-img:hover .middle {
+  opacity: 1;
+}
+
+.text-img {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*Fim imagem de perfil*/
+
+/*Imagem Noticia*/
+.container-img-noticia {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.image-noticia {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: 300px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container-img-noticia:hover .image-noticia {
+  filter: brightness(0.4);
+}
+
+.container-img-noticia:hover .middle {
+  opacity: 1;
+}
+/*Fim imagem de perfil*/
+
+
+.link {
+  background-color: transparent;
+  border: 0;
+  color: #00f;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
+/*Imagens Plataforma*/
+.fundo-ajuda {
+  background-image: url(../images/plataforma/ajuda/header-ajudar-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-ajuda {
+    background-image: url(../images/plataforma/ajuda/header-ajudar-mobile.jpg);
+  }
+}
+
+.fundo-aprender {
+  background-image: url(../images/plataforma/aprender/header-aprender-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-aprender {
+    background-image: url(../images/plataforma/aprender/header-aprender-mobile.jpg);
+  }
+}
+
+.fundo-cadastrar-conteudo {
+  background-image: url(../images/plataforma/cadastrar_conteudo/header-cadastrar-conteudo-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-conteudo {
+    background-image: url(../images/plataforma/cadastrar_conteudo/header-cadastrar-conteudo-mobile.jpg);
+  }
+}
+
+.fundo-conteudo {
+  background-image: url(../images/plataforma/conteudo/header-conteudo-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-conteudo {
+    background-image: url(../images/plataforma/conteudo/header-conteudo-mobile.jpg);
+  }
+}
+
+.fundo-curso {
+  background-image: url(../images/plataforma/curso/header-curso-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-curso {
+    background-image: url(../images/plataforma/curso/header-curso-mobile.jpg);
+  }
+}
+
+.fundo-ensinar {
+  background-image: url(../images/plataforma/ensinar/header-ensinar-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-ensinar {
+    background-image: url(../images/plataforma/ensinar/header-ensinar-mobile.jpg);
+  }
+}
+
+.fundo-formulario-administrador {
+  background-image: url(../images/plataforma/formulario_administrador/header-formulario-administrador-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-formulario-administrador {
+    background-image: url(../images/plataforma/formulario_administrador/header-formulario-administrador-mobile.jpg);
+  }
+}
+
+.fundo-formulario-professor {
+  background-image: url(../images/plataforma/formulario_professor/header-formulario-professor-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-formulario-professor {
+    background-image: url(../images/plataforma/formulario_professor/header-formulario-professor-mobile.jpg);
+  }
+}
+
+.header-index {
+  background-image: url(../images/plataforma/index/header-index-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .header-index {
+    background-image: url(../images/plataforma/index/header-index-mobile.jpg);
+  }
+}
+
+.fundo-noticias-index {
+  background-image: url(../images/plataforma/index/fundo-noticias-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-noticias-index {
+    background-image: url(../images/plataforma/index/fundo-noticias-mobile.jpg);
+  }
+}
+
+.fundo-inscrever {
+  background-image: url(../images/plataforma/inscrever/header-inscrever-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-inscrever {
+    background-image: url(../images/plataforma/inscrever/header-inscrever-mobile.jpg);
+  }
+}
+
+.fundo-login {
+  background-image: url(../images/plataforma/login/header-login-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-login {
+    background-image: url(../images/plataforma/login/header-login-mobile.jpg);
+  }
+}
+
+.fundo-noticia {
+  background-image: url(../images/plataforma/noticia/header-noticia-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-noticia {
+    background-image: url(../images/plataforma/noticia/header-noticia-mobile.jpg);
+  }
+}
+
+.fundo-noticias {
+  background-image: url(../images/plataforma/noticias/header-noticias-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-noticias {
+    background-image: url(../images/plataforma/noticias/header-noticias-mobile.jpg);
+  }
+}
+
+.fundo-participe {
+  background-image: url(../images/plataforma/participe/header-participe-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-participe {
+    background-image: url(../images/plataforma/participe/header-participe-mobile.jpg);
+  }
+}
+
+.fundo-perfil {
+  background-image: url(../images/plataforma/perfil/header-perfil-web.png);
+}
+
+@media (max-width: 728px) {
+  .fundo-perfil {
+    background-image: url(../images/plataforma/perfil/header-perfil-mobile.png);
+  }
+}
+
+.fundo-sobre {
+  background-image: url(../images/plataforma/sobre/header-sobre-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-sobre {
+    background-image: url(../images/plataforma/sobre/header-sobre-mobile.jpg);
+  }
+}
+
+.fundo-teste {
+  background-image: url(../images/plataforma/teste/header-teste-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-teste {
+    background-image: url(../images/plataforma/teste/header-teste-mobile.jpg);
+  }
+}
+/*FIM Imagens Plataforma*/
+
+/*Imagens CMS*/
+.fundo-cadastrar-aluno {
+  background-image: url(../images/cms/cadastrar_aluno/header-cadastrar-aluno-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-aluno {
+    background-image: url(../images/cms/cadastrar_aluno/header-cadastrar-aluno-mobile.jpg);
+  }
+}
+
+.fundo-cadastrar-curso {
+  background-image: url(../images/cms/cadastrar_curso/header-cadastrar-curso-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-curso {
+    background-image: url(../images/cms/cadastrar_curso/header-cadastrar-curso-mobile.jpg);
+  }
+}
+
+.fundo-cadastrar-noticia {
+  background-image: url(../images/cms/cadastrar_noticia/header-cadastrar-noticia-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-noticia {
+    background-image: url(../images/cms/cadastrar_noticia/header-cadastrar-noticia-mobile.jpg);
+  }
+}
+
+.fundo-cadastrar-professor {
+  background-image: url(../images/cms/cadastrar_professor/header-cadastrar-professor-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-professor {
+    background-image: url(../images/cms/cadastrar_professor/header-cadastrar-professor-mobile.jpg);
+  }
+}
+
+.fundo-cadastrar-questao {
+  background-image: url(../images/cms/cadastrar_questao/header-cadastrar-questao-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-questao {
+    background-image: url(../images/cms/cadastrar_questao/header-cadastrar-questao-mobile.jpg);
+  }
+}
+
+.fundo-cadastrar-teste {
+  background-image: url(../images/cms/cadastrar_teste/header-cadastrar-teste-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-cadastrar-teste {
+    background-image: url(../images/cms/cadastrar_teste/header-cadastrar-teste-mobile.jpg);
+  }
+}
+
+.fundo-dashboard {
+  background-image: url(../images/cms/dashboard/header-dashboard-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-dashboard {
+    background-image: url(../images/cms/dashboard/header-dashboard-web.jpg);
+  }
+}
+
+.fundo-editar-corpo-administrativo {
+  background-image: url(../images/cms/editar_corpo_administrativo/header-editar-corpo-administrativo-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-editar-corpo-administrativo {
+    background-image: url(../images/cms/editar_corpo_administrativo/header-editar-corpo-administrativo-mobile.jpg);
+  }
+}
+
+.fundo-editar-curso {
+  background-image: url(../images/cms/editar_curso/header-editar-curso-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-editar-curso {
+    background-image: url(../images/cms/editar_curso/header-editar-curso-mobile.jpg);
+  }
+}
+
+.fundo-editar-noticia {
+  background-image: url(../images/cms/editar_noticia/header-editar-noticia-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-editar-noticia {
+    background-image: url(../images/cms/editar_noticia/header-editar-noticia-mobile.jpg);
+  }
+}
+
+.fundo-editar-teste {
+  background-image: url(../images/cms/editar_teste/header-editar-teste-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-editar-teste {
+    background-image: url(../images/cms/editar_teste/header-editar-teste-mobile.jpg);
+  }
+}
+
+.fundo-lista-alunos {
+  background-image: url(../images/cms/lista_alunos/header-lista-alunos-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-alunos {
+    background-image: url(../images/cms/lista_alunos/header-lista-alunos-mobile.jpg);
+  }
+}
+
+.fundo-lista-conteudo {
+  background-image: url(../images/cms/lista_conteudo/header-lista-conteudo-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-conteudo {
+    background-image: url(../images/cms/lista_conteudo/header-lista-conteudo-mobile.jpg);
+  }
+}
+
+.fundo-lista-cursos {
+  background-image: url(../images/cms/lista_cursos/header-lista-cursos-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-cursos {
+    background-image: url(../images/cms/lista_cursos/header-lista-cursos-mobile.jpg);
+  }
+}
+
+.fundo-lista-noticias {
+  background-image: url(../images/cms/lista_noticias/header-lista-noticias-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-noticias {
+    background-image: url(../images/cms/lista_noticias/header-lista-noticias-mobile.jpg);
+  }
+}
+
+.fundo-lista-professores {
+  background-image: url(../images/cms/lista_professores/header-lista-professores-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-professores {
+    background-image: url(../images/cms/lista_professores/header-lista-professores-mobile.jpg);
+  }
+}
+
+.fundo-lista-questoes {
+  background-image: url(../images/cms/lista_questoes/header-lista-questoes-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-questoes {
+    background-image: url(../images/cms/lista_questoes/header-lista-questoes-mobile.jpg);
+  }
+}
+
+.fundo-lista-testes {
+  background-image: url(../images/cms/lista_testes/header-lista-testes-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-lista-testes {
+    background-image: url(../images/cms/lista_testes/header-lista-testes-mobile.jpg);
+  }
+}
+
+.fundo-matriculas {
+  background-image: url(../images/cms/matriculas/header-matriculas-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-matriculas {
+    background-image: url(../images/cms/matriculas/header-matriculas-mobile.jpg);
+  }
+}
+
+.fundo-resultados {
+  background-image: url(../images/cms/resultados/header-resultados-web.jpg);
+}
+
+@media (max-width: 728px) {
+  .fundo-resultados {
+    background-image: url(../images/cms/resultados/header-resultados-mobile.jpg);
+  }
+}
+/*FIM Imagens CMS*/
+
+
+
+
+
+
+
+
+
+.img-responsive {
+  height: 300px;
+}
+
+.pagine-sem-header {
+  margin-top: 500px;
+}
+
+.wordwrap {
+  word-wrap: break-word;
+}
+
+.dashboard-card {
+  box-shadow:10px 10px 40px -5px grey;
+  background-color: white;
+}
