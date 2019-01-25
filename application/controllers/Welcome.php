@@ -54,9 +54,9 @@ class Welcome extends CI_Controller {
 	public function doar () {
 		// DOAÇÃO ATRAVÉS DO PAGSEGURO
 		// CONFIGURAÇÃO
-		$sandbox = true; /* Para ativar o ambiente de produção substitua o true por false */
-		$pagseguro['email'] = 'angelo.bz.souza@gmail.com'; /* Email de sua conta do PagSeguro ou do Sandbox PagSeguro */
-		$pagseguro['token'] = '7B80B86F7BA7426E824CCCCBB0E02768'; /* Token de sua conta do PagSeguro ou do Sandbox PagSeguro */
+		$sandbox = false; /* Para ativar o ambiente de produção substitua o true por false */
+		$pagseguro['email'] = ' '; /* Email de sua conta do PagSeguro ou do Sandbox PagSeguro */
+		$pagseguro['token'] = ''; /* Token de sua conta do PagSeguro ou do Sandbox PagSeguro */
 		$pagseguro['redirectURL'] = base_url();
 		$pagseguro['currency'] = 'BRL';
 		// DOAÇAO
