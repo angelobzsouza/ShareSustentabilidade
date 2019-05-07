@@ -1,5 +1,4 @@
 # Reutilização da plataforma
----
 
 Para que seja possível a reutilização, é preciso realizar alguns passos, descritos abaixo. Por motivos de padronização pessoal, toda a explicação tomará como diretório base a pasta Share baixada do repositório.
 Antes de mais nada, é importante salientar que, para personalizar a reutilização da aplicação, todas as imagens a serem utilizadas são de responsabilidade de quem deseja reutilizar desenvolvê-las.
@@ -41,11 +40,11 @@ Os arquivos .html podem ser encontrados em “share-master/application/views”
 Além disso, outro objetivo é que que a aplicação seja autossustentável, ou seja, aqueles que desejam utilizar o sistema, possam inserir, excluir, visualizar e atualizar todos os dados do sistema, assim não é necessário de uma equipe de manutenção, sendo total responsabilidade dos administradores, professores e alunos. 
 
 # Hospedagem
----
+
 Após o download da plataforma, a princípio o site só pode ser utilizado na própria máquina. Para que o sistema esteja ao alcance de todos, principalmente de professores e alunos, é necessário realizar a hospedagem deste site, ou seja, é preciso comprar um domínio para o site. Atualmente, para realizar a hospedagem de um site, há um custo para manter a plataforma online e acessível a todos, os custos variam bastante e existem diversos planos. Primeiramente, é necessário comprar um domínio, onde existem alguns, assim, é necessário verificar qual domínio é necessário para a aplicação. Depois de ter um domínio, necessário hospedar esta plataforma, seja esta compartilhada, em cloud ou em servidores virtuais. Alguns provadores que podem ser analisados, são: Weblink, GoDaddy, Hostinger, UOLHost, entre outros.
 
 # Como utilizar
----
+
 Nesta seção, será demonstrado como que cada tipo de usuário, seja administrador, aluno ou professor pode utilizar o site e quais funcionalidades estão disponíveis para cada tipo de acesso.
 
 - Administrador
@@ -53,5 +52,5 @@ No geral, o administrador, em si, consegue realizar inserção, remoção, atual
 
 - Aluno
 Em relação ao aluno, primeiramente, é necessário realizar um login para ter o acesso de aluno. Para isso, é importante ler o edital disponibilizado no site para se tornar um novo colaborador. Após ter acesso, o aluno consegue ler as notícias que são postadas, os eventos que a entidade prepara para seus alunos, consegue visualizar os seus dados, no caso é importante manter esses dados atualizados e o mais importante, ele consegue participar de curso. Para participar de um curso, o aluno deve entrar localizar na barra de navegação, a palavra aprender, no qual ao ser clicado, será redirecionado para esta página e, dentro desta página aparecerá os cursos que estão sendo oferecidos pelo(s) professore(s) e assim, o aluno poderá realizar a inscrição neste curso e acessar os materiais disponibilizados pelo(s) professore(s). Além disso, é possível realizar testes e questionários referentes aos cursos que o aluno está inscrito dentro do sistema.
-•	Professor
+-Professor
 Em relação ao professor, é bem parecido com um aluno, porém ao acessar a plataforma, é necessário logar como professor. Após logado, consegue ver os mesmos dados que os alunos, porém este é responsável por querer ofertar um curso. É de total responsabilidade do professor, postar os materiais da aula na plataforma, assim como editar e preparar os testes e questionários para os alunos.
